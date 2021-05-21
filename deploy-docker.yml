@@ -22,7 +22,7 @@
     - name: Start the container
       docker_container:
         name: koli
-        image: "laly9999/ansdoc:${BUILD_NUMBER}"
+        image: "laly9999/ans1"
         state: started
         published_ports:
-          - 0.0.0.0:8080:8080
+          - 0.0.0.0:80:80
