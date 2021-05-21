@@ -1,5 +1,5 @@
 FROM centos:7
-RUN yum update
+RUN yum update -y
 COPY ./index.html /var/www/html/
 EXPOSE 80
 CMD apachectl -D FOREGROUND
