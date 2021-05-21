@@ -2,11 +2,7 @@
 - hosts: dev
   become: True
   tasks:
-    - name: Install python3.8
-      yum:
-        name: python3.8
-        state: present
-    - name: Install docker
+      - name: Install docker
       yum:
         name: docker
         state: present
